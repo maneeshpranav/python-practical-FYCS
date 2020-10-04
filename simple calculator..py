@@ -6,11 +6,15 @@ def multi(x,y):
     return x*y
 def div(x,y):
     return x/y
+def remain(x,y):
+    return x%y
+
 print("write")
 print("1 for addition")
 print("2 for subtraction")
 print("3 for multiplication")
 print("4 for division")
+print("5  for remainder")
 while True:
     a=int(input("enter the operator number:-"))
     x=float(input("Enter the first value:-"))
@@ -23,5 +27,7 @@ while True:
         print(multi(x,y))
     elif (a==4):
         print(div(x,y))
+    elif (a==5):
+        print(remain(x,y))
     else:
         print("unknown operator")
